@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'BrandonGrotesque-Regular';
+  src: local('BrandonGrotesque-Regular'), url('https://nomail.com.ua/files/woff/1f55925e52b9e71fd57108874184060d.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque-RegularItalic';
+  src: local('BrandonGrotesque-RegularItalic'), url('https://nomail.com.ua/files/woff/d1b49508d604bd4ee556b44fc0cc278b.woff') format('woff');
+}
+
+@import "variables";
+@import "header";
+@import "home";
+@import "services";
+@import "clients";
+@import "logos";
+@import "team";
+@import "contact";
+@import "footer";
+
+.footer {
+  display: block;
+  direction: ltr;
+
+  display-role: darken(darken(darken(darken())));
+}
+
+.red p {
+  font: full-width;
+
+  display-role: darken(d
+  );
+}
