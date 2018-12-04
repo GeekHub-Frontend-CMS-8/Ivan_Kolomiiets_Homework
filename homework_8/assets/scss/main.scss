@@ -1,0 +1,32 @@
+@import "variables";
+@import "fonts";
+@import "header";
+@import "home";
+@import "services";
+@import "clients";
+@import "logos";
+@import "team";
+@import "contact";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.center_content {
+  margin: auto;
+}
+
+.g_content {
+  max-width: 944px;
+  width: 100%;
+}
+
+.top {
+  background: #000 url("../img/bg_home.png") no-repeat center;
+  background-size: cover;
+  min-height: 568px;
+  overflow: hidden;
+}
