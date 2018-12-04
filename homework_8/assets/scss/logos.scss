@@ -1,0 +1,23 @@
+@import "variables";
+
+.logos {
+  background: #fff;
+}
+
+.logos_list {
+  margin: 50px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media screen and (max-width: 780px) {
+  }
+  & div {
+    margin: 10px 0;
+    & a {
+      &:hover {
+        filter: opacity(66%);
+      }
+    }
+  }
+}
