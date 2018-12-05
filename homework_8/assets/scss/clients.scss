@@ -7,11 +7,16 @@
 
 .img_client_bubles {
   width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 7px solid #fff;
   @media screen and (max-width: 740px) {
     width: 100px;
+    height: 100px;
   }
   @media screen and (max-width: 450px) {
     width: 70px;
+    height: 70px;
   }
 }
 

@@ -17,11 +17,19 @@
 }
 
 .gl_social_contact {
-  margin: 50px 0;
   width: 45%;
   @media screen and(max-width: 600px) {
     margin: 15px 0;
     width: 100%;
+  }
+  & h2 {
+    color: $color-text-white;
+    font-family: $font-brandon-light;
+    font-weight: 300;
+    font-size: $text-size-60px;
+    & b {
+      font-family: $font-brandon-bold;
+    }
   }
   & p {
     color: #fff;
