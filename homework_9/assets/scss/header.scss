@@ -1,0 +1,38 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.header__menu {
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.bt_clear {
+  outline: none !important;
+}
+
+.text_link {
+  width: 150px;
+  margin: auto;
+  & a {
+    color: $colot-text;
+    font-family: $font-motserrat;
+    font-size: $size-20px;
+    font-weight: 700;
+    &:hover {
+      color: #d4d4d4;
+    }
+  }
+
+}

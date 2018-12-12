@@ -1,0 +1,63 @@
+@import "variables";
+
+.service {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 100px 0;
+  @media screen and (max-width: 580px) {
+    padding: 40px 0;
+
+  }
+}
+
+.service__text-h2 {
+  color: $colot-text-1;
+  font-family: $font-motserrat;
+  font-size: $size-26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service__text-p {
+  padding: 5px 0;
+  opacity: .8;
+  color: $colot-text-1;
+  font-family: $font-open-sans;
+  font-size: $size-14px;
+  font-weight: 400;
+}
+
+.service__column-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service__column-list-column {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  text-align: center;
+  padding: 60px 15px 0;
+  @media screen and (max-width: 580px) {
+    padding: 15px;
+  }
+}
+
+.service__column-list-column-text-h3 {
+  color: $colot-text-1;
+  font-family: $font-motserrat;
+  font-size: $size-16px;
+  font-weight: 700;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.service__column-list-column-text-p {
+  opacity: 0.8;
+  color: $colot-text-1;
+  font-family: $font-open-sans;
+  font-size: $size-14px;
+  font-weight: 400;
+}
