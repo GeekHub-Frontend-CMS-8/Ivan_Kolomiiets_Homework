@@ -37,7 +37,9 @@
   &:hover {
     box-shadow: 0 5px 50px rgb(255, 255, 255);
     border: none;
-    color: lightgoldenrodyellow;
+    color: $colot-text-1;
+    text-decoration: none;
+    background: $colot-text;
   }
 }
 
