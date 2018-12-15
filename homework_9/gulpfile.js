@@ -24,11 +24,10 @@ gulp.task("html", function () {
 
 gulp.task("watch", [ 'sass', "html", 'img'], function () {
 	browserSync.init({
-		server: "./build",
-		notify: false,
-		ui: {
-			port: 3000
-		}
+        port: 9999,
+		server: {
+        baseDir: 'build',
+    }
     });
     gulp.watch('assets/scss/**/*.scss', ["sass"]);
     gulp.watch('assets/**/*.html' , ['html']);
