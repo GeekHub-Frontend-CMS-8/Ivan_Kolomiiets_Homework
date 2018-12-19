@@ -1,0 +1,88 @@
+@import "../variables";
+
+.services-conteiner {
+  margin-bottom: 3%;
+}
+
+.service_title {
+  margin: 100px 0;
+  @media screen and (max-width: 922px) {
+    margin: 50px 0;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 25px 0;
+  }
+  & h2 {
+    color: $colot-text;
+    font-family: $font-roboto;
+    font-size: $size-60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media screen and (max-width: 576px) {
+      font-size: 40px;
+    }
+  }
+  & h3 {
+    color: $colot-text;
+    font-family: $font-roboto;
+    font-size: $size-20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    & span {
+      color: #ec9da2;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: $size-14px;
+    }
+  }
+  & p {
+    color: $colot-text-2;
+    font-family: $font-roboto;
+    font-size: $size-14px;
+    font-weight: 400;
+    @media screen and (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.services_list {
+  margin: 20px 0;
+}
+
+.services_list_block {
+  background: rgba(200, 83, 90, 0.8);
+  border-radius: 5px;
+  display: block;
+  margin: 10px;
+  width: 240px;
+  height: 403px;
+  padding: 0 10px;
+  & img {
+    max-width: 60%;
+    width: 100%;
+    padding: 30px 0;
+  }
+  & h3 {
+    color: $colot-text;
+    font-family: $font-roboto;
+    font-size: $size-30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px 0;
+    @media screen and (max-width: 677px) {
+      font-size: 20px;
+    }
+  }
+  & p {
+    color: $colot-text-3;
+    font-family: $font-roboto;
+    font-size: $size-14px;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 677px) {
+    width: 200px;
+  }
+}
