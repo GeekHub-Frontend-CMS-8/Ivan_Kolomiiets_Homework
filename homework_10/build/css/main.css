@@ -130,7 +130,7 @@
   padding: 0 0 10%; }
 
 .services-wrapper {
-  background: #b24a50 url("../../img/services/bg_service.png") center center no-repeat;
+  background: #b24a50 url("../img/services/bg_service.png") center center no-repeat;
   background-size: cover;
   height: auto;
   overflow: hidden; }
@@ -452,7 +452,7 @@
   border-radius: 5px; }
 
 .works__grid-item_hover-link {
-  background: url("../../img/work/1.png") center no-repeat;
+  background: url("../img/work/1.png") center no-repeat;
   padding: 15px 25px; }
   .works__grid-item_hover-link:hover {
     opacity: .6; }

@@ -110,7 +110,7 @@
   border-radius: 5px; }
 
 .works__grid-item_hover-link {
-  background: url("../../img/work/1.png") center no-repeat;
+  background: url("../img/work/1.png") center no-repeat;
   padding: 15px 25px; }
   .works__grid-item_hover-link:hover {
     opacity: .6; }
