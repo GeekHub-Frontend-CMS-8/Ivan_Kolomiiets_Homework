@@ -1,0 +1,38 @@
+@import "variables";
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media screen and (max-width: 652px) {
+    justify-content: center;
+  }
+  & div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    & p {
+      margin: 0 15px;
+      color: $colot-text-1;
+      font-family: $font-open-sans;
+      font-size: $size-14px;
+      font-weight: 400;
+    }
+    & a {
+      &:hover {
+      }
+    }
+    & img {
+      &:hover {
+        opacity: .5;
+      }
+      margin: 0 5px;
+    }
+  }
+}

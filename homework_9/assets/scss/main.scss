@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i|Open+Sans:300,400,800');
+@import "variables";
+@import "header";
+@import "home";
+@import "services";
+@import "work";
+@import "testimonial";
+@import "team";
+@import "clients";
+@import "pricing";
+@import "contact";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.hr_st {
+  margin: 0 auto;
+  width: 40px;
+  height: 2px;
+  border: none;
+  border-top: 2px solid #29323c;
+  opacity: 0.8;
+}
+
+.top {
+  background: url("../img/bg_top.png") no-repeat center center;
+  background-size: cover;
+  padding: 32px 5px 0;
+}
+
+.conteiner_center {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+.anchor {
+  padding: 16% 0 0;
+  & a {
+    & img {
+      &:hover {
+        opacity: 0.7;
+        box-shadow: 0 5px 50px rgb(255, 255, 255);
+        border-radius: 99px;
+      }
+    }
+  }
+}
