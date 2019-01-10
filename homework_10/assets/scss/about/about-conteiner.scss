@@ -1,0 +1,137 @@
+@import "../variables";
+
+.about_title {
+  margin: 50px 0;
+  @media screen and (max-width: 922px) {
+    margin: 50px 0;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 25px 0;
+  }
+  & h2 {
+    color: $colot-text;
+    font-family: $font-roboto;
+    font-size: $size-60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media screen and (max-width: 576px) {
+      font-size: 40px;
+    }
+  }
+  & h3 {
+    background: url("../img/about/m_team_bg.png") center no-repeat;
+    padding: 10px;
+    height: 66px;
+    color: $colot-text;
+    font-family: $font-roboto;
+    font-size: $size-20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+    @media screen and (max-width: 576px) {
+      font-size: $size-14px;
+    }
+  }
+  & p {
+    width: 80%;
+    margin: 0 auto;
+    color: #e6d1e3;;
+    font-family: $font-roboto;
+    font-size: $size-14px;
+    font-weight: 400;
+    @media screen and (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.about_list_block_img {
+  display: block;
+  overflow: hidden;
+  max-width: 150px;
+  height: 150px;
+  border-radius: 99px;
+  margin: 25px auto;
+  border: 5px solid #a1859e;
+  & img {
+    width: 100%;
+  }
+}
+
+.about_list_block {
+  background: rgba(102, 84, 100, 0.5);
+  border-radius: 5px;
+  display: block;
+  margin: 10px;
+  width: 240px;
+  height: 350px;
+  padding: 0 10px;
+  & h3 {
+    color: #c7b6c5;
+    font-family: $font-roboto;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    @media screen and (max-width: 677px) {
+      font-size: 20px;
+    }
+  }
+  & p {
+    color: #a1ca6c;
+    font-family: $font-roboto;
+    font-size: $size-14px;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 677px) {
+    width: 200px;
+  }
+  &:hover {
+    .about_list_block_img {
+      border: 5px solid #df5c64;
+
+    }
+    & h3 {
+      color: #fff;
+    }
+    & p {
+      color: #ff8973;
+    }
+
+    background: rgba(102, 84, 100, 0.8);
+  }
+}
+
+.about_list_block_social_list {
+  margin: 0 5px;
+  width: 31px;
+  height: 31px;
+  border-radius: 99px;
+  background-color: #a1859e;
+}
+
+.about_list_block_social_list_f {
+  &:hover {
+    background-color: #4f689e;
+  }
+}
+
+.about_list_block_social_list_t {
+  &:hover {
+
+    background-color: #74c7d5;
+  }
+}
+
+.about_list_block_social_list_g {
+  &:hover {
+
+    background-color: #df5c64;
+  }
+}
+
+.about_list_block_social_list_l {
+  &:hover {
+    background-color: #3e61af;
+  }
+}
