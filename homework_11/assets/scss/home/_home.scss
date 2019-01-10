@@ -1,0 +1,67 @@
+@import "../variables";
+
+$color-white: #fff;
+.home {
+  background: #e3e3e3 url("../img/bg_home.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 0;
+  height: auto;
+  @media screen and (max-width: 420px) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 90px 0;
+    height: 100vh;
+
+  }
+  &__line {
+    background: url("../img/Line.png") center no-repeat;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  &__text-h1 {
+    color: $color-white;
+    font-family: $text-amsdam;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text-p {
+    color: $color-white;
+    font-family: $text-crimson;
+    font-size: 14px;
+    font-weight: 400;
+
+  }
+}
+
+.home__bt {
+  padding-top: 30px;
+  width: 153px;
+  height: 44px;
+  margin: 0 auto;
+  &:hover {
+    transition: .8s ease-out;
+    transform: scale(1.2);
+  }
+}
+
+.bt_border {
+  border: 2px solid #f2f2f2;
+  padding: 7px 10px 7px 23px;
+  text-decoration: none;
+  &:after {
+    content: '';
+    background: url(../img/Arrow.png) no-repeat;
+    padding: 17px 8px;
+    position: relative;
+    top: 39px;
+    right: 44px;
+  }
+  &:hover {
+    opacity: .7;
+  }
+}

@@ -1,0 +1,17 @@
+$menu-color: #797979;
+
+.link {
+  font: 400 14px/1 $text-Montserrat;
+  text-decoration: none;
+  opacity: .5;
+  cursor: pointer;
+  color: $menu-color;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: .3s;
+    opacity: 1;
+    font-weight: 400;
+    color: $menu-color;
+  }
+}
