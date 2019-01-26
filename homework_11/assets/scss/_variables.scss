@@ -1,0 +1,39 @@
+$text-Montserrat: 'Open Sans', sans-serif;
+$text-amsdam: 'Amsdam';
+$text-crimson: 'Crimson Text', serif;
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 260px;
+}
+:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+botton {
+  cursor: pointer;
+}
+img {
+  vertical-align: initial !important;
+}
+
+a {
+  color: transparent;
+  text-decoration: none !important;
+  &:hover {
+    color: black;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

@@ -1,0 +1,95 @@
+@import "variables";
+
+.team {
+  background: #d6dbdf url("../img/bg_team.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+  &__title {
+    & h2 {
+      color: #3e3d3d;
+      font-family: $text-amsdam;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    & p {
+      color: #3e3d3d;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+  &__comand {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-item {
+      margin: 15px;
+    }
+    &-img {
+      width: 270px;
+      height: 340px;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.holder {
+  position: relative;
+}
+
+.team__comand-item-block {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  top: 10px;
+  display: none;
+  text-align: left;
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transition: .6s ease-out;
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90%;
+    & h3 {
+      color: #3e3d3d;
+      font-family: $text-Montserrat;
+      font-size: 13px;
+      font-weight: 700;
+      margin: 0 5px;
+    }
+    & p {
+      color: #3e3d3d;
+      font-family: $text-crimson;
+      font-size: 14px;
+      font-style: italic;
+      margin: 10px 5px;
+    }
+    & img {
+      width: 50%;
+      margin: 0 5px;
+    }
+  }
+  &-link {
+    height: 10%;
+    margin: 0 5px;
+    & a {
+      margin-right: 5px;
+      &:hover {
+        img {
+          transition: .8s ease-out;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}

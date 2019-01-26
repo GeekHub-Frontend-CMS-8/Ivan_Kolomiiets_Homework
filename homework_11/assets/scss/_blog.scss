@@ -1,0 +1,104 @@
+@import "variables";
+
+.blog {
+  background: #e3e3e3;
+  padding-top: 50px ;
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+  &__block{
+    &_title {
+      text-align: center;
+      & h2 {
+        color: #3e3d3d;
+        font-family: $text-amsdam;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      & p {
+        color: #3e3d3d;
+        font-family: $text-crimson;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &_item {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & div{
+        background: #2d2d2f;
+        width: 400px;
+        height: 410px;
+        display: block;
+        overflow: hidden;
+        opacity: .5;
+        & img{
+          width: 100%;
+          height: 100%;
+        }
+        & h5{
+          font-family: $text-crimson;
+          font-size: 12px;
+          font-style: italic;
+          padding: 10px 20px;
+          margin: 0;
+        }
+        & h4 {
+          font-family: $text-Montserrat;
+          font-size: 13px;
+          font-weight: 400;
+
+          text-transform: uppercase;
+          padding: 5px 20px;
+          margin: 0;
+        }
+        & p {
+          color: #949494;
+          font-family: $text-crimson;
+          font-size: 14px;
+          font-weight: 400;
+          padding:0 20px;
+        }
+        & a{
+          text-decoration: none;
+          color: #e3e3e3;
+        }
+        &:hover {
+          background: #2d2d2f;
+          opacity: 1;
+         }
+        @media (max-width: 1600px) {
+          width: 350px;
+          height: 360px;
+        }
+        @media (max-width: 1400px) {
+          width: 300px;
+          height: 310px;
+        }
+        @media (max-width: 1200px) {
+          width: 250px;
+          height: 260px;
+        }
+        @media (max-width: 1000px) {
+          width: 200px;
+          height: 210px;
+        }
+        @media (max-width: 800px) {
+          width: 160px;
+          height: 170px;
+        }
+        @media (max-width: 640px) {
+          width: 130px;
+          height: 140px;
+        }
+        @media (max-width: 520px) {
+          width: 105px;
+          height: 115px;
+        }
+      }
+    }
+  }
+}
