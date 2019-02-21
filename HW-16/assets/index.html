@@ -3,10 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <title>HW_16</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
 </head>
 <body>
+<div class="wrapper">
+    <nav>
+        <div class="container_center">
+            <div class="nav__block">
+                <div class="menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='active'><a>portfolio</a>
+                                <ul>
+                                    <li><a href='#'>Fashion</a></li>
+                                    <li><a href='#'>Editorial</a></li>
+                                    <li><a href='#'>street</a></li>
+                                    <li><a>black white</a>
+                                        <ul>
+                                            <li><a href='#'>Gallery /1</a></li>
+                                            <li><a href='#'>Gallery /2</a></li>
+                                            <li><a href='#'>Gallery /3</a></li>
+                                            <li><a href='#'>Gallery /4</a></li>
+                                            <li><a href='#'>Gallery /5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href='#'>personal</a></li>
+                                </ul>
+                            </li>
+                            <li><a href='#'>clients</a></li>
+                            <li><a href='#'>news</a></li>
+                            <li><a href='#'>about me</a></li>
+                            <li><a href='#'>contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo__off"><a href="#"><img src="img/square_logo.png" alt="Logo"></a></div>
+                <div class="social social_st">
+                    <div><a href="#"><img src="img/f.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/t.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/c.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/m.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/g.png" alt=""></a></div>
+                    <div><a href="#"><img src="img/ma.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="container_center">
+            <div class="fade home_img">
+                <div><img class="home_img" src="img/Photo.png" alt=""></div>
+                <div><img class="home_img" src="img/no1-1500-rs-1140x1140.png" alt=""></div>
+                <div><img class="home_img" src="img/no1-1500-rl-1140x1140.png" alt=""></div>
+            </div>
+            <div onclick="openblock('i1')" class="open_block"><img src="img/open.png" alt=""></div>
+            <div id="i1" style="display:none;">
+                <div class="open_info">
+                    <div onclick="openblock('i1')" class="open_block open_block-set"><img src="img/close.png" alt="">
+                    </div>
+                    <div class="popup">
+                        <div class="popup__text">
+                            <h3>morgan freeman</h3>
+                            <h4>actor</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+                                venenatis
+                                ante venenatis eget.</p>
+                        </div>
+                        <div class="popup__manage">
+                            <button type="button" class="prevbt reset_bt"><img src="img/bg%20arrow%20l.png" alt="">
+                            </button>
+                            <button type="button" class="nextbt reset_bt"><img src="img/bg%20arrow%20r.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup__link">
+                        <a href=""><img src="img/love.png" alt=""></a>
+                        <a href=""><img src="img/pre.png" alt=""></a>
+                        <a href=""><img src="img/msg.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="container_center">
+            <div class="bottom__block">
+                <div class="bottom__workshops">
+                    <div class="bottom__workshops-img">
+                        <img src="img/wkp.png" alt="">
+                    </div>
+                    <div class="bottom__workshops-text">
+                        <h4 class="bottom__workshops-text-h4">fashion workshop</h4>
+                        <p class="bottom__workshops-text-p">NOV 21-23</p>
+                        <h5 class="bottom__workshops-tex-h5">9:00am - 4:00pm</h5>
+                    </div>
+                    <a href="">RSVP</a>
+                </div>
+                <div class="bottom__news">
+                    <h3 class="bottom__news-title">news</h3>
+                    <img src="img/Forma_1.png" alt="">
+                    <div class="bottom__news-new">
+                        <div class="bottom__news-new-img">
+                            <img src="img/thumb.png" alt="">
+                        </div>
+                        <div class="bottom__news-new-text">
+                            <h3>New Gallery Set</h3>
+                            <h4>09.12.2014</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+                                venenatis
+                                ante venenatis eget. <a class="bottom__news-new-text-readM" href="">Read More</a></p>
+
+                        </div>
+                    </div>
+                    <div class="bottom__news-new">
+                        <div class="bottom__news-new-img">
+                            <img src="img/thumb.png" alt="">
+                        </div>
+                        <div class="bottom__news-new-text">
+                            <h3>New Gallery Set</h3>
+                            <h4>09.12.2014</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+                                venenatis
+                                ante venenatis eget. <a class="bottom__news-new-text-readM" href="">Read More</a></p>
+
+                        </div>
+                    </div>
+                    <div class="bottom__news-new">
+                        <div class="bottom__news-new-img">
+                            <img src="img/thumb.png" alt="">
+                        </div>
+                        <div class="bottom__news-new-text">
+                            <h3>New Gallery Set</h3>
+                            <h4>09.12.2014</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mi orci, ac
+                                venenatis
+                                ante venenatis eget. <a class="bottom__news-new-text-readM" href="">Read More</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom__cont">
+                    <div class="bottom__cont-info">
+                        <div class="bottom__cont-info-logo">
+                            <a href=""> <img src="img/logo2.png" alt=""></a>
+                        </div>
+                        <div class="bottom__cont-info-contacts">
+                            <p><img src="img/1.png" alt=""><span>+ 00 123 456 7890</span></p>
+                            <p><img src="img/2.png" alt=""><span>info@square.com</span></p>
+                            <div class="social new-social">
+                                <div><a href="#"><img src="img/f.png" alt=""></a></div>
+                                <div><a href="#"><img src="img/t.png" alt=""></a></div>
+                                <div><a href="#"><img src="img/c.png" alt=""></a></div>
+                                <div><a href="#"><img src="img/m.png" alt=""></a></div>
+                                <div><a href="#"><img src="img/g.png" alt=""></a></div>
+                                <div><a href="#"><img src="img/ma.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__cont-twit">
+                        <div class="">
+                            <img src="img/p.png" alt="">
+                        </div>
+                        <div class="bottom__cont-twit-text">
+                            <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake
+                               <span>@cheesecake</span> tootsie roll.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container_center">
+            <div class="partners__block">
+                <a href=""><img src="img/phaseone_logo.png" alt=""></a>
+                <a href=""><img src="img/manfrotto_logo.png" alt=""></a>
+                <a href=""><img src="img/hasselblad.png" alt=""></a>
+                <a href=""><img src="img/broncolor_logo.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_center">
+            <div class="created">
+                <h5>Created by 2ndself.com, with <img src="img/lo.png" alt=""> exclusive for theuncreativelab.com</h5>
+            </div>
+            <p> © 2014 Square. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/inz.js"></script>
+<script type="text/javascript" src="js/open_popup.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
 
 </body>
-
 </html>
