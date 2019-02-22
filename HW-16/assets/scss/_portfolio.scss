@@ -1,1 +1,136 @@
 @import "variables";
+
+.portfolio {
+  &__section {
+
+
+    &-block {
+      display: flex;
+      justify-content: center;
+      flex-flow: row;
+      flex-wrap: wrap;
+      &-item {
+        color: #362f2f;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+
+        span {
+          display: block;
+          width: 380px;
+          max-height: 380px;
+          height: 100%;
+          padding: 40% 0;
+          text-align: left;
+          @media(max-width: 799.9px) {
+            padding: 0;
+            margin-top: 30px;
+          }
+          @media(max-width: 401px) {
+            width: auto;
+          }
+
+          h4 {
+            font-size: 24px;
+            font-weight: 400;
+          }
+
+          h5 {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
+.lisrum {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+
+  .lisrum-layer_bottom {
+    display: block;
+  }
+}
+
+.lisrum {
+  .lisrum-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    bottom: 15%;
+    width: 260px;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0.62);
+    color: #333;
+    padding: 15px;
+    transition: all 0.8s ease-in-out 0s;
+  }
+}
+
+.lisrum:hover {
+  .lisrum-layer_top {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.dada {
+  position: absolute;
+  display: block;
+  width: 15px !important;
+  top: 45%;
+  left: 45%;
+}
+
+#modal_form {
+  width: 300px;
+  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position:fixed; /* всегдa перекрывaет весь сaйт */
+  background-color:#000; /* чернaя */
+  opacity:0.8; /* нo немнoгo прoзрaчнa */
+  -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+  filter:alpha(opacity=80);
+  width:100%;
+  height:100%; /* рaзмерoм вo весь экрaн */
+  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left:0;
+  cursor:pointer;
+  display:none; /* в oбычнoм сoстoянии её нет) */
+}
