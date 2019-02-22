@@ -1,0 +1,313 @@
+@import "variables";
+
+.container_st-post {
+  max-width: 755px !important;
+}
+
+.posts {
+  &__open {
+    &-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-title {
+      color: #333333;
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-around;
+      color: #333333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 20px;
+
+      .dates {
+        &:before {
+          content: url("../img/aa.png");
+          margin-right: 10px;
+        }
+      }
+
+      .comments {
+        &:before {
+          content: url("../img/dd.png");
+          margin-right: 10px;
+        }
+      }
+
+      .likes {
+        &:before {
+          content: url("../img/ff.png");
+          margin-right: 10px;
+        }
+      }
+
+    }
+
+    &-text {
+      text-align: left;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    &-share {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background-color: #f8f8f8;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      &-left {
+        color: #333333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22.4px;
+        text-transform: uppercase;
+        display: flex;
+
+        div {
+          margin: 0 15px;
+        }
+      }
+
+      &-righ {
+
+      }
+    }
+
+    &-coments {
+      text-align: left;
+
+      &-block {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        margin: 20px 0;
+
+        &-one {
+          display: flex;
+          flex-flow: row;
+          flex-wrap: wrap;
+          width: 100%;
+          color: #333333;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+
+          h4 {
+            width: 20%;
+          }
+
+          h5 {
+            width: 60%;
+            font-size: 12px;
+            color: #7f8c8c;
+          }
+
+          h6 {
+            width: 10%;
+            text-align: right;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &:before {
+              content: url("../img/Reply_copy.png");
+              margin-right: 5px;
+            }
+          }
+
+        }
+
+        &-two {
+          display: flex;
+          height: auto;
+          color: #000000;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22.4px;
+          margin: 10px 0;
+
+          &-com {
+            padding: 10px;
+            background-color: #e6e6e6;
+
+          }
+        }
+
+        &-thre {
+          margin: 20px 20px 0;
+
+        }
+      }
+    }
+
+    &-form {
+      text-align: left;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+
+      input {
+        width: 331px;
+        height: 40px;
+        border: 1px solid #000000;
+        margin: 10px;
+        padding: 0 5px;
+        @media (max-width: 768px) {
+          width: 250px;
+          height: 30px;
+        }
+        @media (max-width: 570px) {
+          width: 150px;
+          height: 30px;
+        }
+        @media (max-width: 375px) {
+          width: 127px;
+          margin: 5px;
+        }
+      }
+
+      &-st-2 {
+        display: flex;
+        align-items: flex-end;
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
+      }
+
+      textarea {
+        width: 475px;
+        height: 187px;
+        border: 1px solid #000000;
+        margin: 10px;
+        color: #aaaaaa;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 5px;
+        @media (max-width: 768px) {
+          width: 300px;
+          height: 80px;
+        }
+        @media (max-width: 570px) {
+          width: 200px;
+          height: 70px;
+        }
+        @media (max-width: 375px) {
+          width: 150px;
+          margin: 5px 15px;
+        }
+      }
+
+      button {
+        width: 170px;
+        height: 35px;
+        background-color: #333333;
+        border: none;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 10px;
+        @media (max-width: 570px) {
+          width: 100px;
+          font-size: 12px;
+        }
+      }
+
+      p {
+        color: #333333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        margin: 50px 0 100px;
+        @media (max-width: 768px) {
+          margin: 30px 0 70px;
+        }
+      }
+    }
+
+  }
+}
+
+.reply {
+  background-color: #f8f8f8 !important;
+}
+
+.bottom {
+  &__category {
+    width: 350px;
+    text-align: left;
+    margin: 30px 0;
+
+    @media (max-width: 749px) {
+      margin: 20px 15px;
+    }
+
+    &-title {
+      color: #362f2f;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 14px;
+      text-transform: uppercase;
+    }
+
+    &-new {
+      display: flex;
+      margin: 20px 0;
+      text-align: left;
+      flex-flow: column;
+
+      div {
+        margin: 5px 0;
+
+      }
+
+      a {
+        color: #353535;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:hover {
+          background-color: #362f2f;
+          padding: 10px 20px;
+          border-radius: 99px;
+          color: #fff;
+
+        }
+
+        &:before {
+          content: url("../img/Layer_3_copy_3.png");
+          padding: 10px 5px;
+          position: relative;
+          bottom: 3px;
+        }
+      }
+    }
+  }
+}
